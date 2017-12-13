@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<!-- title -->
+			<h1 id="centered" class="display-4 text-center">Weight Converter</h1>
+			<!-- form -->
+			<form>
+				<div class="form-group">
+					<label class="custom-control custom-radio">
+						<input id="grams" name="weight" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="color">Grams</span>
+					</label>
+
+					<label class="custom-control custom-radio m">
+						<input id="pounds" name="weight" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="color">Pounds</span>
+					</label>
+					 
+					<label class="custom-control custom-radio">
+						<input id="kilograms" name="weight" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="color">Kilograms</span>
+					</label>
+
+					<label class="custom-control custom-radio">
+						<input id="ounces" name="weight" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="color">Ounces</span>
+					</label>
+
+					<input id="input" type="number" class="form-control form-control-lg" placeholder="Enter Weight Value..." />
+				</div>
+			</form>
+
+			<div id="output">
+				<div class="card mb-2 card-1">
+					<div class="card-block">
+						<h4>Grams:</h4>
+						<div id="gOutput"></div>
+					</div>
+				</div>
+				<div class="card mb-2 card-2">
+					<div class="card-block">
+						<h4>Pounds:</h4>
+						<div id="lbsOutput"></div>
+					</div>
+				</div>
+
+				<div class="card mb-2 card-3">
+					<div class="card-block">
+						<h4>Kilograms:</h4>
+						<div id="kgOutput"></div>
+					</div>
+				</div>
+
+				<div class="card mb-2 card-4">
+					<div class="card-block">
+						<h4>Ounces:</h4>
+						<div id="ozOutput"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+	 
+	<script src="js/countWeight.js"></script>
+</body>
+</html>
